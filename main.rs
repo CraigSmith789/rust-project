@@ -21,6 +21,17 @@ fn main() {
 fn say_name(first: String, last: String) {
   println!("{} {}", first, last);
 }
+fn main() {
+  let first = "Pascal".to_string();
+  
+  say_first_name(&first);
+  say_first_name(&first);
+}
+
+fn say_first_name(first: &String) {
+  println!("{}", first);
+}
+
 
 
 
